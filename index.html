@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Achievers ID</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      header {
+        height: 100px;
+        background-color: #343a40 !important;
+        display: flex;
+        padding: 0 40px 0 10px;
+      }
+      .header1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-grow: 3;
+        flex-basis: 30%;
+        flex-grow: 3;
+      }
+      nav {
+        flex-grow: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-grow: 7;
+      }
+      ul {
+        display: flex;
+        gap: 50px;
+      }
+      li {
+        list-style: none;
+        font-size: large;
+        color: white;
+      }
+      a {
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+      }
+      section.image {
+        display: flex;
+        & img {
+          width: 100%;
+        }
+      }
+
+      div.banner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+        position: relative;
+        bottom: 41px;
+
+        & div {
+          display: flex;
+          width: 350px;
+          background-color: rgb(255, 255, 255);
+          justify-content: space-around;
+          align-items: center;
+          padding: 20px 30px;
+          box-shadow: 5px 5px 5px gray;
+          transition: all 0.5s ease-in-out;
+          & a {
+            color: blue;
+            font-weight: bold;
+          }
+        }
+        & div:hover {
+          transform: scale(1.05);
+          background-color: rgb(18, 11, 24);
+          color: white;
+          box-shadow: 10px 10px 5px gray;
+        }
+      }
+      h2 {
+        position: fixed;
+        right: -50px;
+        top: 45%;
+        transform: rotate(270deg);
+        background-color: red;
+        padding: 15px 30px;
+        border-radius: 20px 20px 0 0;
+      }
+      .body1 {
+        padding: 0 75px;
+      }
+      footer {
+        height: 100px;
+        background-color: black;
+        color: white;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        left: 0;
+
+        font-size: large;
+        font-weight: bold;
+        & p:first-child {
+          color: orange;
+        }
+        & p:nth-child(3) {
+          color: green;
+        }
+      }
+      aside {
+        height: 20px;
+        width: 20px;
+        background-color: red;
+        position: fixed;
+        bottom: 110px;
+        right: 10px;
+        padding: 10px;
+        font-size: x-large;
+        font-weight: 900;
+      }
+      .maincard {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+
+        & .card {
+          height: 400px;
+          width: 280px;
+          background-color: rgb(255, 255, 255);
+          box-shadow: 10px 10px 10px gray;
+          margin-bottom: 30px;
+
+          & a {
+            & .head {
+              background-color: orangered;
+              padding: 20px 0;
+              & h1 {
+                font-size: 40px;
+                margin-left: 10px;
+              }
+            }
+            & .body {
+              height: 40%;
+              padding: 10px;
+              color: black;
+              & .description {
+                height: 50%;
+                font-size: 14px;
+              }
+              & .footer {
+                height: 40%;
+                font-size: x-larges;
+                margin-top: 30px;
+              }
+            }
+          }
+        }
+      }
+      section {
+        & h1 {
+          margin-bottom: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h2>content</h2>
+
+    <header>
+      <div class="header1">
+        <a href="https://www.achieversit.com/"
+          ><img
+            src="https://www.achieversit.com/assets/images/logo-white.png"
+            alt="achieversit"
+            height="50px"
+        /></a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">All Courses</a></li>
+          <li><a href="#">Corporate Trining</a></li>
+          <li><a href="#">Placements</a></li>
+          <li><a href="#">Internship</a></li>
+          <li><a href="#">Reviews</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="image">
+      <img
+        src="https://www.achieversit.com/assets/images/angular_training.jpg"
+        alt="angular_training"
+      />
+    </section>
+    <div class="body1">
+      <div class="banner">
+        <div>
+          <p>
+            BECOME A <br /><span><b>UI DEVELOPER</b></span>
+          </p>
+          <p><a href="">KNOW MORE ></a></p>
+        </div>
+        <div>
+          <p>
+            BECOME A <br /><span><b>ANGULAR DEVELOPER</b></span>
+          </p>
+          <p><a href="">KNOW MORE ></a></p>
+        </div>
+        <div>
+          <p>
+            BECOME A <br /><span><b>REACT DEVELOPER</b></span>
+          </p>
+          <p><a href="">KNOW MORE ></a></p>
+        </div>
+      </div>
+      <section>
+        <h1>TRENDING COURSES</h1>
+        <div class="maincard">
+          <section class="card">
+            <a href="#">
+              <div class="head">
+                <h1>
+                  REACT <br />
+                  DEVELOPER <br />
+                  COURSE
+                </h1>
+              </div>
+              <div class="body">
+                <div class="description">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Officiis, provident. Lorem ipsum dolor sit, amet
+                    consectetur.
+                  </p>
+                </div>
+                <div class="footer">
+                  <hr />
+
+                  <h3>Review</h3>
+                  <p>* * * * * <b>4.8(243)</b></p>
+                </div>
+              </div>
+            </a>
+          </section>
+          <section class="card">
+            <a href="#">
+              <div class="head">
+                <h1>
+                  REACT <br />
+                  DEVELOPER <br />
+                  COURSE
+                </h1>
+              </div>
+              <div class="body">
+                <div class="description">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Officiis, provident. Lorem ipsum dolor sit, amet consectetur
+                    adipisicing elit. Exercitationem quasi deleniti.
+                  </p>
+                </div>
+                <div class="footer">
+                  <hr />
+
+                  <h3>Review</h3>
+                  <p>* * * * * <b>4.8(243)</b></p>
+                </div>
+              </div>
+            </a>
+          </section>
+          <section class="card">
+            <a href="#">
+              <div class="head">
+                <h1>
+                  REACT <br />
+                  DEVELOPER <br />
+                  COURSE
+                </h1>
+              </div>
+              <div class="body">
+                <div class="description">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Officiis, provident. Lorem ipsum dolor sit, amet consectetur
+                    adipisicing elit. Exercitationem quasi deleniti.
+                  </p>
+                </div>
+                <div class="footer">
+                  <hr />
+
+                  <h3>Review</h3>
+                  <p>* * * * * <b>4.8(243)</b></p>
+                </div>
+              </div>
+            </a>
+          </section>
+          <section class="card">
+            <a href="#">
+              <div class="head">
+                <h1>
+                  REACT <br />
+                  DEVELOPER <br />
+                  COURSE
+                </h1>
+              </div>
+              <div class="body">
+                <div class="description">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Officiis, provident. Lorem ipsum dolor sit, amet consectetur
+                    adipisicing elit. Exercitationem quasi deleniti.
+                  </p>
+                </div>
+                <div class="footer">
+                  <hr />
+
+                  <h3>Review</h3>
+                  <p>* * * * * <b>4.8(243)</b></p>
+                </div>
+              </div>
+            </a>
+          </section>
+          <section class="card">
+            <a href="#">
+              <div class="head">
+                <h1>
+                  REACT <br />
+                  DEVELOPER <br />
+                  COURSE
+                </h1>
+              </div>
+              <div class="body">
+                <div class="description">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Officiis, provident. Lorem ipsum dolor sit, amet consectetur
+                    adipisicing elit. Exercitationem quasi deleniti.
+                  </p>
+                </div>
+                <div class="footer">
+                  <hr />
+
+                  <h3>Review</h3>
+                  <p>* * * * * <b>4.8(243)</b></p>
+                </div>
+              </div>
+            </a>
+          </section>
+          <section class="card">
+            <a href="#">
+              <div class="head">
+                <h1>
+                  REACT <br />
+                  DEVELOPER <br />
+                  COURSE
+                </h1>
+              </div>
+              <div class="body">
+                <div class="description">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Officiis, provident. Lorem ipsum dolor sit, amet consectetur
+                    adipisicing elit. Exercitationem quasi deleniti.
+                  </p>
+                </div>
+                <div class="footer">
+                  <hr />
+
+                  <h3>Review</h3>
+                  <p>* * * * * <b>4.8(243)</b></p>
+                </div>
+              </div>
+            </a>
+          </section>
+          <section class="card">
+            <a href="#">
+              <div class="head">
+                <h1>
+                  REACT <br />
+                  DEVELOPER <br />
+                  COURSE
+                </h1>
+              </div>
+              <div class="body">
+                <div class="description">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Officiis, provident. Lorem ipsum dolor sit, amet consectetur
+                    adipisicing elit. Exercitationem quasi deleniti.
+                  </p>
+                </div>
+                <div class="footer">
+                  <hr />
+
+                  <h3>Review</h3>
+                  <p>* * * * * <b>4.8(243)</b></p>
+                </div>
+              </div>
+            </a>
+          </section>
+          <section class="card">
+            <a href="#">
+              <div class="head">
+                <h1>
+                  REACT <br />
+                  DEVELOPER <br />
+                  COURSE
+                </h1>
+              </div>
+              <div class="body">
+                <div class="description">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Officiis, provident. Lorem ipsum dolor sit, amet consectetur
+                    adipisicing elit. Exercitationem quasi deleniti.
+                  </p>
+                </div>
+                <div class="footer">
+                  <hr />
+
+                  <h3>Review</h3>
+                  <p>* * * * * <b>4.8(243)</b></p>
+                </div>
+              </div>
+            </a>
+          </section>
+        </div>
+      </section>
+      <section>
+        <h1>RECENT ADDITIONS</h1>
+        <div class="maincard">
+          <section class="card">
+            <a href="#">
+              <div class="head">
+                <h1>
+                  REACT <br />
+                  DEVELOPER <br />
+                  COURSE
+                </h1>
+              </div>
+              <div class="body">
+                <div class="description">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Officiis, provident. Lorem ipsum dolor sit, amet consectetur
+                    adipisicing elit. Exercitationem quasi deleniti.
+                  </p>
+                </div>
+                <div class="footer">
+                  <hr />
+
+                  <h3>Review</h3>
+                  <p>* * * * * <b>4.8(243)</b></p>
+                </div>
+              </div>
+            </a>
+          </section>
+          <section class="card">
+            <a href="#">
+              <div class="head">
+                <h1>
+                  REACT <br />
+                  DEVELOPER <br />
+                  COURSE
+                </h1>
+              </div>
+              <div class="body">
+                <div class="description">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Officiis, provident. Lorem ipsum dolor sit, amet consectetur
+                    adipisicing elit. Exercitationem quasi deleniti.
+                  </p>
+                </div>
+                <div class="footer">
+                  <hr />
+
+                  <h3>Review</h3>
+                  <p>* * * * * <b>4.8(243)</b></p>
+                </div>
+              </div>
+            </a>
+          </section>
+          <section class="card">
+            <a href="#">
+              <div class="head">
+                <h1>
+                  REACT <br />
+                  DEVELOPER <br />
+                  COURSE
+                </h1>
+              </div>
+              <div class="body">
+                <div class="description">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Officiis, provident. Lorem ipsum dolor sit, amet consectetur
+                    adipisicing elit. Exercitationem quasi deleniti.
+                  </p>
+                </div>
+                <div class="footer">
+                  <hr />
+
+                  <h3>Review</h3>
+                  <p>* * * * * <b>4.8(243)</b></p>
+                </div>
+              </div>
+            </a>
+          </section>
+          <section class="card">
+            <a href="#">
+              <div class="head">
+                <h1>
+                  REACT <br />
+                  DEVELOPER <br />
+                  COURSE
+                </h1>
+              </div>
+              <div class="body">
+                <div class="description">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Officiis, provident. Lorem ipsum dolor sit, amet consectetur
+                    adipisicing elit. Exercitationem quasi deleniti.
+                  </p>
+                </div>
+                <div class="footer">
+                  <hr />
+                  <h3>Review</h3>
+                  <p>* * * * * <b>4.8(243)</b></p>
+                </div>
+              </div>
+            </a>
+          </section>
+        </div>
+      </section>
+      <h1>Discover Top Categories</h1>
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <aside><p>^</p></aside>
+    <footer>
+      <p>Call as on: 6383479344</p>
+      <p>Request A Call Back</p>
+      <p>Whatsapp with us</p>
+    </footer>
+  </body>
+</html>
